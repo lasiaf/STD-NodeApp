@@ -1,0 +1,29 @@
+{
+  "name": "nodeappstd",
+  "version": "1.0.0",
+  "description": "Standard Format Apps Node using Express JS",
+  "keywords": [
+    "nodejs",
+    "express",
+    "api"
+  ],
+  "homepage": "https://github.com/lasiaf/STD-NodeApp#readme",
+  "bugs": {
+    "url": "https://github.com/lasiaf/STD-NodeApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lasiaf/STD-NodeApp.git"
+  },
+  "license": "ISC",
+  "author": "M Faisal",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1"
+  }
+}
