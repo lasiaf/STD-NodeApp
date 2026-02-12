@@ -6,3 +6,17 @@
 3. Route
 
 */
+
+const Autoload = require('./config/autoload');
+const Routes = require('./config/routes');
+const express = require('express');
+
+const app = express();
+
+// Jalankan Autoload
+const config = new Autoload();
+config.init();
+
+// Jalankan Routes
+const route = new Routes();
+route.init();

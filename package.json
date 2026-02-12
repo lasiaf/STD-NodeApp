@@ -20,7 +20,8 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node app.js"
   },
   "dependencies": {
     "dotenv": "^17.2.4",
