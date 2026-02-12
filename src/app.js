@@ -6,7 +6,7 @@
 3. Route
 
 */
-
+global.__basedir = __dirname;
 const Autoload = require('./config/autoload');
 const Routes = require('./config/routes');
 const express = require('express');
