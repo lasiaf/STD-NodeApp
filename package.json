@@ -1,6 +1,6 @@
 {
   "name": "nodeappstd",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Standard Format Apps Node using Express JS",
   "keywords": [
     "nodejs",
