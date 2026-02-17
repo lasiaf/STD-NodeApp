@@ -1,7 +1,8 @@
-const express = require('express');
 const path = require('path');
+const express = require('express');
 const router = express.Router();
-const rootPath = process.cwd();
+const app = express();
+
 
 
 
@@ -23,6 +24,11 @@ router.get('/home', (req, res) => {
 
 router.get('/home-layout', (req, res) => {
   res.sendFile(path.join(__basedir, '/src/views/screen/index.html'));
+});
+
+
+router.get('/home-ejs', (req, res) => {
+  res.render('screen/home');
 });
 
 router.get('/path', (req, res) => {

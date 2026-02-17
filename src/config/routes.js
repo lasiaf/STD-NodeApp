@@ -7,7 +7,11 @@ class Routes {
   init() {
     const express = require('express');
     const Routes2 = require('./routes/index');
+    const path = require('path');
     const app = express();
+
+    app.set('view engine', 'ejs');
+    app.set('views', path.join(__basedir, 'src', 'views'));
 
     app.use(express.json());
     
