@@ -18,7 +18,11 @@ router.get('/home', (req, res) => {
 });*/
 
 router.get('/home', (req, res) => {
-  res.sendFile(path.join(__basedir, '/views/screen/index.html'));
+  res.sendFile(path.join(__basedir, '/src/views/screen/index.html'));
+});
+
+router.get('/home-layout', (req, res) => {
+  res.sendFile(path.join(__basedir, '/src/views/screen/index.html'));
 });
 
 router.get('/path', (req, res) => {
