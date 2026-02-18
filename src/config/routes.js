@@ -12,6 +12,7 @@ class Routes {
 
     app.set('view engine', 'ejs');
     app.set('views', path.join(__basedir, 'src', 'views'));
+    app.use('/asset', express.static(path.join(__basedir, 'src/asset')));
 
     app.use(express.json());
     

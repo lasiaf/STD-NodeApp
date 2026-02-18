@@ -31,6 +31,10 @@ router.get('/home-ejs', (req, res) => {
   res.render('screen/home');
 });
 
+router.get('/template', (req, res) => {
+  res.render('screen/homepage');
+});
+
 router.get('/path', (req, res) => {
   res.send(__basedir);
 });
