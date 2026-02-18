@@ -20,7 +20,7 @@ class Routes {
     const routesx = new Routes2(app);  // ✅ pakai new
     routesx.register();
 
-    app.listen(3000, () => {
+    app.listen(3000, '0.0.0.0', () => {
     console.log('Server running on port 3000');
     });
 

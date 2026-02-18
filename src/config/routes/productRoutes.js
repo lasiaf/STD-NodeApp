@@ -28,6 +28,7 @@ router.get('/home-layout', (req, res) => {
 
 
 router.get('/home-ejs', (req, res) => {
+  console.log('Request URL:', req.url);
   res.render('screen/home');
 });
 

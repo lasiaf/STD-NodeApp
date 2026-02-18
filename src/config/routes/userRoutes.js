@@ -6,6 +6,10 @@ router.get('/', (req, res) => {
   res.send('Get all users');
 });
 
+router.get('/homes', (req, res) => {
+  res.render('screen/home');
+});
+
 router.get('/:id', (req, res) => {
   res.send(`Get user ${req.params.id}`);
 });
