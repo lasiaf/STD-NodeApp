@@ -1,3 +1,8 @@
+const path = require('path');
+const db = require(
+    path.join(__basedir, 'src/config/database')
+);
+
 class CrudController {
 
     store(req, res) {
@@ -30,6 +35,54 @@ class CrudController {
             message: "Data diterima",
             data: req.body
         });
+    }
+
+    async storedb(req, res) {
+        const { title, description } = req.body;
+        const rese = await db.query('SELECT current_database()');
+        try {
+            const result = await db.query(
+                'INSERT INTO products (title, description) VALUES ($1, $2) RETURNING *',
+                [title, description]
+            );
+
+            res.json({
+                message: 'Data berhasil disimpan',
+                data: result.rows[0]
+            });
+
+            
+            
+
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ message: 'Database error' });
+            console.log(rese.rows);
+        }
+
+    }
+
+    async checkConnection(req, res) {
+        try {
+
+            const result = await db.query('SELECT NOW()');
+
+            res.status(200).json({
+                success: true,
+                message: 'Database connected successfully',
+                server_time: result.rows[0].now
+            });
+
+        } catch (error) {
+
+            console.error(error);
+
+            res.status(500).json({
+                success: false,
+                message: 'Database connection failed',
+                error: error.message
+            });
+        }
     }
 
 }

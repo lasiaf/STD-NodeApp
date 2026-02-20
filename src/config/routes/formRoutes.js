@@ -20,6 +20,10 @@ router.post('/store', crudController.store);
 
 router.post('/stores', crudController.stores);
 
+router.post('/storedb', crudController.storedb);
+
+router.post('/checkConnection', crudController.checkConnection);
+
 router.get('/form', (req, res) => {
   res.render('screen/form/simpleinput');
 });
@@ -28,7 +32,9 @@ router.get('/multidata', (req, res) => {
   res.render('screen/form/multidata');
 });
 
-
+router.get('/inputdb', (req, res) => {
+  res.render('screen/form/inputdb');
+});
 
 
 module.exports = router;
