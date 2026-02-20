@@ -47,7 +47,7 @@ class CrudController {
             );
 
             res.json({
-                message: 'Data berhasil disimpan',
+                message: 'OK! Data berhasil disimpan',
                 data: result.rows[0]
             });
 
