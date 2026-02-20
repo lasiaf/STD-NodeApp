@@ -1,6 +1,6 @@
 {
   "name": "nodeappstd",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Standard Format Apps Node using Express JS",
   "keywords": [
     "nodejs",
@@ -26,6 +26,7 @@
   "dependencies": {
     "dotenv": "^17.2.4",
     "ejs": "^4.0.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mysql2": "^3.17.3"
   }
 }

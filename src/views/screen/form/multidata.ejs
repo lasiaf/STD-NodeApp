@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kirim JSON</title>
+</head>
+<body>
+
+<button onclick="kirimData()">Kirim Data</button>
+
+<script>
+function kirimData() {
+
+    const data = [
+        {
+            title: "Judul 1",
+            description: "Deskripsi 1"
+        },
+        {
+            title: "Judul 2",
+            description: "Deskripsi 2"
+        }
+    ];
+
+    fetch('/form/stores', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(data => console.log(data));
+
+}
+</script>
+
+</body>
+</html>

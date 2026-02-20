@@ -10,9 +10,8 @@
 const Autoload = require('./config/autoload');
 const Routes = require('./config/routes');
 const Configs = require('./config/config');
-const express = require('express');
 
-const app = express();
+
 
 // Jalankan Autoload
 const config = new Autoload();
