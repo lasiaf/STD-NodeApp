@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const app = express();
 
+const productController = require( path.join(__basedir, 'src/controllers/productController') );
 
 
 
@@ -39,6 +40,8 @@ router.get('/template', (req, res) => {
 router.get('/path', (req, res) => {
   res.send(__basedir);
 });
+
+router.get('/getDataDB/:id', productController.index);
 
 
 
