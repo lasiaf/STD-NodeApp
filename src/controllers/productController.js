@@ -1,4 +1,3 @@
-const path = require('path');
 const productModel = require(
     path.join(__basedir, 'src/models/productModel')
 );

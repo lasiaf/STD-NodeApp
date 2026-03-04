@@ -1,6 +1,8 @@
 class Autoload {
   constructor() {
     global.__basedir = process.cwd();
+    global.path = require('path');
+
     console.log('Autoload dijalankan...');
     require('dotenv').config();
   }
