@@ -8,8 +8,8 @@
 */
 
 const Autoload = require('./config/autoload');
-const Routes = require('./config/routes');
 const Configs = require('./config/config');
+const Routes = require('./config/routes');
 
 
 

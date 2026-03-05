@@ -1,0 +1,35 @@
+1. Alur app.js > src/app.js > Autoload, Config, Routes
+2. Database menggunakan postgresql
+3. Struktur tabel sebagai berikut ini, database : node_db
+4. Table : 
+	Products
+		Id [Number]
+		Title [Varchar 50]
+		Descriptions [Text]
+		Price [Decimals]
+		IdGroup [Number]
+	ProductsGroup
+		IdGroup [Number]
+		Name [Varchar 50]
+	Users
+		Username [Varchar 30]
+		Password [Varchar 100]
+		Name [Varchar 50]
+5. Model
+	productsModel : Keperluan untuk mengakses data di table Products dan ProductsGroup
+	usersModel : Untuk keperluan auth 
+6. Controller
+	userController
+	productController
+7. Config
+	autoload : load awal untuk setting yang sering digunakan
+	database : setting koneksi database
+	config : pengaturan aplikasi
+	routes : routing aplikasi
+8. Views
+	Component : Merupakan potongan 
+	Layout : tempat css ataupun template 
+	Screen : tampilan halaman yang akan dilihat user
+		Auth
+		Form
+		Data
