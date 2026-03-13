@@ -19,13 +19,15 @@
 	productsModel : Keperluan untuk mengakses data di table Products dan ProductsGroup
 	usersModel : Untuk keperluan auth 
 6. Controller
-	userController
-	productController
+	userController : Menangani data berkaitan dengan Users
+	productController : Menangani data berkaitan dengan Product
+	crudController : Menangani semua CRUD (bersifat general)
 7. Config
 	autoload : load awal untuk setting yang sering digunakan
-	database : setting koneksi database
+	database : setting koneksi database, database yang digunakan saat ini adalah postgresql
 	config : pengaturan aplikasi
 	routes : routing aplikasi
+	appdir : meringkas tampilan path
 8. Views
 	Component : Merupakan potongan 
 	Layout : tempat css ataupun template 
@@ -35,3 +37,14 @@
 		Data
 9. Asset
     img, icon,font
+10. URL yang digunakan : 
+		http://localhost:3000/Products/getDataDB/oba : Menampilkan data yang mengandung kata "oba"
+		http://localhost:3000/Products/template : Menampilkan landing page yang full CSS dan JS yang estetik
+		http://localhost:3000/Products/home-ejs : Menampilkan page yang mengambil komponen footer yang berbeda file serta menampilkan image
+		http://localhost:3000/Products/path : Menampilkan path dari file
+		http://localhost:3000/Products/Home : Menampilkan simple view yang bukan berformat ejs tetapi html
+		http://localhost:3000/Users/77 : Mengambil nilai ID, yaitu bernilai "77"
+		http://localhost:3000/form/form : Form input data tetapi hanya untuk ditampilkan tanpa disimpan
+		http://localhost:3000/form/storedb : Form input data yang diproses disimpan di dalam database
+		http://localhost:3000/form/multidata : Tombol mengirim data (lebih dari satu) berupa JSON namun respon yang diberikan hanya berupa console log
+

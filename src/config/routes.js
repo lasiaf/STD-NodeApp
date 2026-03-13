@@ -7,19 +7,13 @@ class Routes {
   init() {
     const express = require('express');
     const Routes2 = require('./routes/index');
-    const path = require('path');
+    const AppDir = require('./appdir');   // import class baru
     const app = express();
 
-    app.use(express.urlencoded({ extended: true }));
-    app.use(express.json());
+    // jalankan konfigurasi app
+    const appdir = new AppDir(app);
+    appdir.init();
 
-    app.set('view engine', 'ejs');
-    app.set('views', path.join(__basedir, 'src', 'views'));
-    app.use('/asset', express.static(path.join(__basedir, 'src/asset')));
-    app.use('/templates', express.static(path.join(__basedir, 'src/views/layout/templates')));
-
-    app.use(express.json());
-    
     const routesx = new Routes2(app);  // ✅ pakai new
     routesx.register();
 

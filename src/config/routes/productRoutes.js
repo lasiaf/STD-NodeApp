@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
   res.send('Create product');
 });
+
 /*
 router.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname, '../../views/screen/index.html'));
