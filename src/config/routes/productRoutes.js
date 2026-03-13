@@ -37,6 +37,10 @@ router.get('/template', (req, res) => {
   res.render('screen/homepage');
 });
 
+router.get('/templatepart', (req, res) => {
+  res.render('screen/templatepart');
+});
+
 router.get('/path', (req, res) => {
   res.send(__basedir);
 });
