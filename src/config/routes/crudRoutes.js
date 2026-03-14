@@ -35,6 +35,9 @@ router.get('/inputdb', (req, res) => {
   res.render('screen/form/inputdb');
 });
 
+router.get('/upload', (req, res) => {
+  res.render('screen/form/upload');
+});
 
 module.exports = router;
 

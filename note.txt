@@ -37,7 +37,8 @@
 		Data
 9. Asset
     img, icon,font
-10. URL yang digunakan : 
+10. Versi : Sudah mengikuti standar atuan versi pada "Node JS Development Standard Book"
+11. URL yang digunakan : 
 		http://localhost:3000/Products/getDataDB/oba : Menampilkan data yang mengandung kata "oba"
 		http://localhost:3000/Products/template : Menampilkan landing page yang full CSS dan JS yang estetik
 		http://localhost:3000/Products/home-ejs : Menampilkan page yang mengambil komponen footer yang berbeda file serta menampilkan image
@@ -48,3 +49,4 @@
 		http://localhost:3000/form/storedb : Form input data yang diproses disimpan di dalam database
 		http://localhost:3000/form/multidata : Tombol mengirim data (lebih dari satu) berupa JSON namun respon yang diberikan hanya berupa console log
 		http://localhost:3000/Products/templatepart : Menampilkan layar landing page yang estetik dan dipecah secara layout komponen seperti bagian Header dan About
+		http://localhost:3000/form/upload : Form upload file

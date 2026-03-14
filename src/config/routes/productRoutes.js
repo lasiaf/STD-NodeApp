@@ -47,6 +47,7 @@ router.get('/path', (req, res) => {
 
 router.get('/getDataDB/:id', productController.index);
 
+router.post('/upload', productController.uploadProduct);
 
 
 module.exports = router;
