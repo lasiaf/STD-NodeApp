@@ -50,3 +50,14 @@
 		http://localhost:3000/form/multidata : Tombol mengirim data (lebih dari satu) berupa JSON namun respon yang diberikan hanya berupa console log
 		http://localhost:3000/Products/templatepart : Menampilkan layar landing page yang estetik dan dipecah secara layout komponen seperti bagian Header dan About
 		http://localhost:3000/form/upload : Form upload file
+12. Standar Keamanan Basic : 
+	a. Validasi input
+	b. Sanitasi Input
+	c. Perlindungan CSRF
+	d. Gunakan Helmet untuk Security Header
+	e. Rate Limiting
+	f. Escape Output di Template
+	g. Validasi File Upload (Type, Ukuran, Name dengan Multer)
+	h. HTTPS
+	i. Authentication dan Authorization
+	j. ORM / Query Parameter
